@@ -2,19 +2,23 @@ html {
     background-color: #393939;
 }
 
-.nav-link.active {
+a.nav-link.active {
     background-color: #009848 !important;
     color: white;
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
+    #logoTitle {
+        display: none !important;
+    }
+
     .container {
         margin: 0 !important;
     }
 
-    .nav.nav-pills {
-        display: none;
+    #dropdownLogos {
+        display: flex;
+        align-items: center;
     }
-
 }
