@@ -1,24 +1,67 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #393939;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+}
 html {
     background-color: #393939;
 }
 
+a.nav-link {
+    opacity: 0.5;
+    transition: border-bottom .25s ease;
+}
+
+a.nav-link:hover {
+    border-bottom: .25rem solid;
+    border-bottom-color: white;
+
+}
+
 a.nav-link.active {
-    background-color: #009848 !important;
+    opacity: 1;
+    border-bottom: .25rem solid;
+    border-bottom-color: #009848;
     color: white;
+}
+
+.dropdown {
+    position: relative;
+
+}
+
+#dropdownMenuLink {
+    border: 0;
+    border-bottom: white 2px solid;
+    border-radius: 0;
+}
+
+ul.dropdown-menu {
+    max-width: 2.25rem !important;
+    min-width: revert;
+    background-color: #393939;
+    border: 0;
+    margin-top: 0 !important;
+}
+
+ul.dropdown-menu:hover {
+    background-color: #393939 !important;
+}
+
+#dropdownLogos {
+    background-color: #393939;
+    display: flex;
+    align-items: center;
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
     #logoTitle {
         display: none !important;
-    }
-
-    .container {
-        margin: 0 !important;
-    }
-
-    #dropdownLogos {
-        display: flex;
-        align-items: center;
     }
 }
