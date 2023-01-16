@@ -59,6 +59,7 @@ ul.dropdown-menu:hover {
     align-items: center;
 }
 
+
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
     #logoTitle {
