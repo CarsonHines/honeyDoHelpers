@@ -12,6 +12,16 @@ html {
     background-color: #393939;
 }
 
+#companyLogo {
+    width: 10%;
+    padding-left: 1rem;
+}
+
+#logoTitle > a {
+    width: auto;
+}
+
+
 a.nav-link {
     opacity: 0.5;
     transition: border-bottom .25s ease;
@@ -59,6 +69,37 @@ ul.dropdown-menu:hover {
     align-items: center;
 }
 
+/* #desktopView {
+    background-image: url("/HDHlogo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: local;
+} */
+
+/* #banner {
+
+} */
+
+#bannerContent {
+    padding: 3rem 0;
+
+}
+
+#bannerContent > img {
+    border-radius: 8px;
+}
+
+#bannerTextOverlay {
+    width: 25%;
+    border: 3px black solid;
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+}
+
+/* #bannerContent, #bannerTextOverlay > h3, #bannerTextOverlay > p {
+
+} */
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
