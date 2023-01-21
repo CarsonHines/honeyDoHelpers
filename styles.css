@@ -13,8 +13,8 @@ html {
 }
 
 #companyLogo {
-    width: 10%;
-    padding-left: 1rem;
+    width: 100%;
+    max-height: 44px;
 }
 
 #logoTitle > a {
