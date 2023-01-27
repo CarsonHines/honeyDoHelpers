@@ -69,45 +69,29 @@ ul.dropdown-menu:hover {
     align-items: center;
 }
 
-/* #desktopView {
-    background-image: url("/HDHlogo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: local;
-} */
+#desktopView {
+    padding: 0;
+} 
 
 #banner {
-    background-image: url("/HDHlogo.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 50rem;
 }
 
-#bannerText {
-    opacity: 0.6;
+#bannerText > h1 {
+    font-size: 4rem;
 }
 
-#bannerContent {
-    padding: 3rem 0;
-
+#bannerButtons > button {
+    border: 2px black solid;
 }
 
-#bannerContent > img {
-    border-radius: 8px;
+#elecCol {
+    height: 10rem;
+    background-image: url("/hdhNavLogo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-
-#bannerTextOverlay {
-    width: 25%;
-    border: 3px black solid;
-    border-radius: 8px;
-    backdrop-filter: blur(8px);
-}
-
-/* #bannerContent, #bannerTextOverlay > h3, #bannerTextOverlay > p {
-
-} */
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {

@@ -1,17 +1,7 @@
-const navigation = document.getElementById("navigation");
-const desktop = document.getElementById("desktopView");
-const mobile = document.getElementById("mobileView");
+function contactPage() {
+    window.location.href = "https://honeydohelpers.net/contact/";
+}
 
-// function screenSize() {
-//     if (window.innerWidth <= 768) {
-//         desktop.style.display = "none";
-//         mobile.style.display = "inherit";
-//     }
-//     else {
-//         mobile.style.display = "none";
-//         desktop.style.display = "inherit";
-//     }
-// }
+const contactButton = document.getElementById("bannerContact");
 
-// window.onload = screenSize;
-// window.onresize = screenSize;
+contactButton.addEventListener("click", contactPage)
