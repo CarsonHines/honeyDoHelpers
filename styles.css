@@ -17,6 +17,10 @@ html {
     max-height: 44px;
 }
 
+#logoTitle {
+    border-bottom: #009848 .2rem solid;
+}
+
 #logoTitle > a {
     width: auto;
 }
@@ -85,12 +89,9 @@ ul.dropdown-menu:hover {
     border: 2px black solid;
 }
 
-#elecCol {
-    height: 10rem;
-    background-image: url("/hdhNavLogo.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+#servicesContainer {
+    border-top: #009848 .2rem solid;
+    border-bottom: #009848 .2rem solid;
 }
 
 /* Small devices (landscape phones, less than 768px) */
