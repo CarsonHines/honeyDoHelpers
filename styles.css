@@ -25,21 +25,19 @@ html {
     width: auto;
 }
 
-
 a.nav-link {
     opacity: 0.5;
     transition: border-bottom .25s ease;
 }
 
 a.nav-link:hover {
-    border-bottom: .25rem solid;
+    border-bottom: .15rem solid;
     border-bottom-color: white;
-
 }
 
 a.nav-link.active {
     opacity: 1;
-    border-bottom: .25rem solid;
+    border-bottom: .15rem solid;
     border-bottom-color: #009848;
     color: white;
 }
@@ -79,10 +77,17 @@ ul.dropdown-menu:hover {
 
 #banner {
     height: 50rem;
+    background-image: url("/whiteBrick.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#bannerText > h1 {
-    font-size: 4rem;
+#bannerText {
+    padding-right: 0rem;
+}
+
+#innerBanner {
+    backdrop-filter: blur(5px);
 }
 
 #bannerButtons > button {
