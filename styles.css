@@ -77,9 +77,10 @@ ul.dropdown-menu:hover {
 
 #banner {
     height: 50rem;
-    background-image: url("/whiteBrick.jpg");
+    background-image: url("/honeyHouse.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+    background-position-y: 50%;
 }
 
 #bannerText {
