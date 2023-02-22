@@ -53,14 +53,6 @@ a.nav-link.active {
     padding-right: 0rem;
 }
 
-#innerBanner {
-    backdrop-filter: blur(5px);
-}
-
-#bannerButtons > button {
-    border: 2px black solid;
-}
-
 #servicesContainer {
     border-top: #009848 .2rem solid;
     border-bottom: #009848 .2rem solid;
