@@ -49,6 +49,14 @@ a.nav-link.active {
     background-position-y: 50%;
 }
 
+#innerBanner > h1 {
+    font-size: 5rem;
+}
+
+#innerBanner > h5 {
+    font-size: 2rem;
+}
+
 #bannerText {
     padding-right: 0rem;
 }
@@ -56,4 +64,33 @@ a.nav-link.active {
 #servicesContainer {
     border-top: #009848 .2rem solid;
     border-bottom: #009848 .2rem solid;
+}
+
+@media screen and (max-width: 1200px) {
+    #innerBanner > h1 {
+        font-size: 4rem;
+    }
+
+    #innerBanner > h5 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    #innerBanner {
+        
+    }
+
+    #innerBanner > h1 {
+        font-size: 3rem;
+    }
+
+    #innerBanner > h5 {
+        font-size: 1.25rem;
+    }
+
+    #bannerButtons > a {
+        font-size: .75rem;
+    }
 }
