@@ -61,12 +61,25 @@ a.nav-link.active {
     padding-right: 0rem;
 }
 
-#servicesContainer {
+#servicesContainer, #servicesContainerMedium, #servicesContainerSmall{
     border-top: #009848 .2rem solid;
     border-bottom: #009848 .2rem solid;
 }
 
+#lightbulb {
+    transform: translate(38px);
+}
+
+#eyeball {
+    transform: translate(123px);
+}
+
 @media screen and (max-width: 1200px) {
+
+    #banner {
+        background-size: 140%;
+        background-position-x: 50%;
+    }
 
     #innerBanner > h1 {
         font-size: 4rem;
@@ -79,12 +92,37 @@ a.nav-link.active {
     #bannerButtons > a {
         font-size: 1rem;
     }
+
+    #lightbulb {
+        transform: translate(34px);
+    }
+    
+    #eyeball {
+        transform: translate(89px);
+    }
+
+    #servicesContainer {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    #servicesContainerMedium {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 992px) {
 
-    #innerBanner {
-        
+    #servicesContainer {
+        display: none;
+    }
+
+    #servicesContainerMedium {
+        display: none;
     }
 
     #innerBanner > h1 {
@@ -98,4 +136,41 @@ a.nav-link.active {
     #bannerButtons > a {
         font-size: .75rem;
     }
+
+    #lightbulb {
+        transform: translate(32px);
+    }
+    
+    #eyeball {
+        transform: translate(72px);
+    }
+
+}
+
+@media screen and (min-width: 993px) {
+    
+    #servicesContainerSmall {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    #mobileView {
+        display: none;
+    }
+
+    #companyLogo {
+        max-height: 44px !important;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #companyLogo {
+        max-height: 30px;
+    }
+
 }
