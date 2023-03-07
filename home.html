@@ -290,19 +290,19 @@
     <!--Desktop View End-->
 
     <!--Mobile View Start-->
-    <div class="container-fluid" id="mobileView">
+    <div class="container-fluid px-0" id="mobileView">
 
         <!--Navigation-->
-        <nav class="navbar navbar-dark bg-transparent">
+        <nav class="navbar navbar-dark bg-transparent px-3" id="navMobile">
             <div class="container-fluid p-0">
-                <a class="navbar-brand" href="/home.html">
+                <a class="navbar-brand py-0" href="/home.html">
                     <img src="/mobileNavLogo.png" id="companyLogo">
                 </a>
-                <button class="navbar-toggler collapsed mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse" id="navbar" style>
-                    <ul class="navbar-nav me-auto mb-2">
+                <div class="navbar-collapse collapse mt-1" id="navbar" style>
+                    <ul class="navbar-nav me-auto">
                         <li class="nav-item pb-2">
                             <a class="nav-link" aria-current="page" href="/home.html">Home</a>
                         </li>
@@ -320,7 +320,35 @@
 
         <!--Main Content Start-->
             <!--Banner Start-->
+            <div class="container-fluid d-flex px-0">
+                <div class="container-fluid  bg-transparent d-flex flex-column justify-content-center align-items-center w-100 h-100 px-0 py-5">
+                        <h1 class="bg-transparent mb-2 text-white display-3" id="bannerHeaderMobile">
+                            Honey Do Helpers
+                        </h1>
 
+                        <div class="bg-transparent pb-1">
+                            <svg id="lightbulbMobile" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#00659e" class="bi bi-lightbulb bg-transparent" viewBox="0 0 16 16">
+                                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+                            </svg>
+                            <svg id="eyeballMobile" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#009848" class="bi bi-eye bg-transparent" viewBox="0 0 16 16">
+                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                            </svg>
+                        </div>
+
+                        <h5 class="bg-transparent text-white">
+                            Make your
+                            <span class="bg-transparent" style="color: #00659e;font-family: 'MuseoModerno', cursive;">
+                                idea
+                            </span>
+                            a 
+                            <span class="bg-transparent" style="color: #009848; font-family: 'Work Sans', sans-serif;">
+                                reality
+                            </span>
+                        </h5>
+
+                </div>
+            </div>
             <!--Banner End-->
             <!--Services Start-->
 

@@ -70,8 +70,16 @@ a.nav-link.active {
     transform: translate(38px);
 }
 
+#lightbulbMobile {
+    transform: translate(27px);
+}
+
 #eyeball {
     transform: translate(123px);
+}
+
+#eyeballMobile {
+    transform: translate(76px);
 }
 
 @media screen and (max-width: 1200px) {
