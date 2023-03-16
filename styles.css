@@ -8,6 +8,8 @@ html {
     background-color: #393939;
 }
 
+/* Home Page Begins */ 
+
 #companyLogo {
     max-height: 44px;
 }
@@ -181,4 +183,13 @@ a.nav-link.active {
         max-height: 30px;
     }
 
+}
+
+/* Home Page Ends */
+
+
+/* Contact Page Begins */
+
+#contactForm > form > p {
+    margin-bottom: 0;
 }
