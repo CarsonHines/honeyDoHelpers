@@ -190,6 +190,31 @@ a.nav-link.active {
 
 /* Contact Page Begins */
 
+#contactForm {
+    max-width: 700px;
+    padding: 5rem 5rem;
+    padding-top: 4rem;
+}
+
+#first_name::placeholder, #last_name::placeholder, #phone_number::placeholder, #email::placeholder, #message::placeholder {
+    color: lightgray;
+}
+
+
+
+.form-control:focus {
+    border-color: white !important;
+    box-shadow: 0 0 0 0.25rem #009848 !important;
+}
+
 #contactForm > form > p {
     margin-bottom: 0;
+}
+
+#lightbulbContact {
+    transform: translate(352px);
+}
+
+#contactSubmit {
+    background-color: #009848;
 }
