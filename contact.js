@@ -1,17 +1,28 @@
-const navigation = document.getElementById("navigation");
-const desktop = document.getElementById("desktopView");
-const mobile = document.getElementById("mobileView");
+const validationBorder = document.getElementsByClassName('form-control');
+let firstNameValue = document.getElementById('first_name');
+const lastNameValue = document.getElementById('last_name');
+const phoneNumberValue = document.getElementById('phone_number');
+const emailValue = document.getElementById('email');
+const messageValue = document.getElementById('message');
 
-// function screenSize() {
-//     if (window.innerWidth <= 768) {
-//         desktop.style.display = "none";
-//         mobile.style.display = "inherit";
-//     }
-//     else {
-//         mobile.style.display = "none";
-//         desktop.style.display = "inherit";
-//     }
+firstNameValue.addEventListener("change", test);
+
+function test() {
+    console.log(firstNameValue.value)
+    firstNameValue.value = firstNameValue.value.charAt(0).toUpperCase() + firstNameValue.value.slice(1);
+};
+
+// for(let i = 0 ; i <= validationBorder.length ; i++) {
+//     if(typeof validationBorder[i] == "string") {
+//         validationBorder[i].addEventListener("change", upperCase);
+//     };
+//     validationBorder[i].addEventListener("change", validation);
+// };
+
+// function upperCase() {
+
 // }
 
-// window.onload = screenSize;
-// window.onresize = screenSize;
+// function validation() {
+//     console.log(validationBorder);
+// };
