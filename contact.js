@@ -1,28 +1,66 @@
 const validationBorder = document.getElementsByClassName('form-control');
-let firstNameValue = document.getElementById('first_name');
-const lastNameValue = document.getElementById('last_name');
-const phoneNumberValue = document.getElementById('phone_number');
-const emailValue = document.getElementById('email');
-const messageValue = document.getElementById('message');
+let fName = document.getElementById('first_name');
+let lName = document.getElementById('last_name');
+let phoneNum = document.getElementById('phone_number');
+let email = document.getElementById('email');
+let message = document.getElementById('message');
 
-firstNameValue.addEventListener("change", test);
+fName.addEventListener("change", function (){
+    capitalize(fName);
+});
 
-function test() {
-    console.log(firstNameValue.value)
-    firstNameValue.value = firstNameValue.value.charAt(0).toUpperCase() + firstNameValue.value.slice(1);
+lName.addEventListener("change", function () {
+    capitalize(lName);
+});
+
+phoneNum.addEventListener("change", dashedNumber);
+
+email.addEventListener("change", emailWait);
+
+message.addEventListener("change", messageWait);
+
+function capitalize(name) {
+    nameVal = name.value;
+
+    if(nameVal.length > 0) {
+        name.value = nameVal.charAt(0).toUpperCase() + nameVal.slice(1);
+        setTimeout(function () {
+            valid(name);
+        }, 500);
+    };
 };
 
-// for(let i = 0 ; i <= validationBorder.length ; i++) {
-//     if(typeof validationBorder[i] == "string") {
-//         validationBorder[i].addEventListener("change", upperCase);
-//     };
-//     validationBorder[i].addEventListener("change", validation);
-// };
+function dashedNumber() {
+    let phoneNumVal = phoneNum.value;
 
-// function upperCase() {
+    if(phoneNumVal.length == 10) {
+        phoneNum.value = phoneNumVal.slice(0,3) + '-' + phoneNumVal.slice(3,6) + '-' + phoneNumVal.slice(6,10);
+        setTimeout(function () {
+            valid(phoneNum);
+        }, 500);
+    };
+};
 
-// }
+function emailWait() {
+    emailVal = email.value;
 
-// function validation() {
-//     console.log(validationBorder);
-// };
+    if (emailVal.length > 0) {
+        setTimeout(function () {
+            valid(email);
+        }, 500);
+    };
+};
+
+function messageWait() {
+    messageVal = message.value;
+
+    if(messageVal.length > 10) {
+        setTimeout(function () {
+            valid(message);
+        }, 500);
+    };
+};
+
+function valid(val) {
+    val.style.borderColor = "#009848";
+};

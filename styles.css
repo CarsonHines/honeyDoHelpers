@@ -200,11 +200,19 @@ a.nav-link.active {
     color: lightgray;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
 
 
 .form-control:focus {
     border-color: white !important;
-    box-shadow: 0 0 0 0.25rem #009848 !important;
+    box-shadow: 0 0 0 0.25rem black !important;
 }
 
 #contactForm > form > p {
