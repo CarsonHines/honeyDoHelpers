@@ -38,6 +38,9 @@ function dashedNumber() {
         setTimeout(function () {
             valid(phoneNum);
         }, 500);
+    }
+    else {
+        phoneNum.value = null;
     };
 };
 
