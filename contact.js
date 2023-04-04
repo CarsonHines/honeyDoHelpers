@@ -20,13 +20,16 @@ email.addEventListener("change", emailWait);
 message.addEventListener("change", messageWait);
 
 function capitalize(name) {
-    nameVal = name.value;
+    let nameVal = name.value;
 
     if(nameVal.length > 0) {
         name.value = nameVal.charAt(0).toUpperCase() + nameVal.slice(1);
         setTimeout(function () {
             valid(name);
         }, 500);
+    }
+    else {
+        name.style.borderColor = "lightgray"
     };
 };
 
@@ -40,30 +43,41 @@ function dashedNumber() {
         }, 500);
     }
     else {
+        phoneNum.style.borderColor = "lightgray"
         phoneNum.value = null;
     };
 };
 
 function emailWait() {
-    emailVal = email.value;
+    let emailVal = email.value;
 
     if (emailVal.length > 0) {
         setTimeout(function () {
             valid(email);
         }, 500);
+    }
+    else {
+        email.style.borderColor = "lightgray"
     };
 };
 
 function messageWait() {
-    messageVal = message.value;
+    let messageVal = message.value;
 
     if(messageVal.length > 10) {
         setTimeout(function () {
             valid(message);
         }, 500);
+    }
+    else {
+        message.style.borderColor = "lightgray"
     };
 };
 
 function valid(val) {
-    val.style.borderColor = "#009848";
+    if (val != null) {
+        val.style.borderColor = "#009848";
+    }
 };
+
+//document.getElementById("Button").disabled = false;
