@@ -4,6 +4,7 @@ let lName = document.getElementById('last_name');
 let phoneNum = document.getElementById('phone_number');
 let email = document.getElementById('email');
 let message = document.getElementById('message');
+let inputs = document.getElementsByTagName('input');
 
 fName.addEventListener("change", function (){
     capitalize(fName);
@@ -64,7 +65,7 @@ function emailWait() {
 function messageWait() {
     let messageVal = message.value;
 
-    if(messageVal.length > 10) {
+    if(messageVal.length >= 5) {
         setTimeout(function () {
             valid(message);
         }, 500);
@@ -77,7 +78,20 @@ function messageWait() {
 function valid(val) {
     if (val != null) {
         val.style.borderColor = "#009848";
+    };
+
+    for (let i = 0; i <= inputs.length - 2; i++) {
+        console.log(inputs[i].style.borderColor);
+        if (inputs[i].style.borderColor == "rgb(0, 152, 72)" && message.style.borderColor == "rgb(0, 152, 72)") {
+            document.getElementById("contactSubmit").disabled = false;
+        }
+        else if (inputs[i].style.borderColor != "rgb(0, 152, 72)" || message.style.borderColor != "rgb(0, 152, 72)"){
+            document.getElementById("contactSubmit").disabled = true;
+        }
     }
 };
+
+
+
 
 //document.getElementById("Button").disabled = false;
