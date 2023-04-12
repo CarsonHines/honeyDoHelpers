@@ -51,6 +51,14 @@ a.nav-link.active {
     background-position-y: 50%;
 }
 
+#bannerMobile {
+    height: 100%;
+    background-image: url("/honeyHouse.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+}
+
 #innerBanner > h1 {
     font-size: 5rem;
 }
@@ -192,7 +200,7 @@ a.nav-link.active {
 
 #contactForm {
     max-width: 700px;
-    padding: 4rem 5rem;
+    padding: 1rem 2rem;
 }
 
 #first_name::placeholder, #last_name::placeholder, #phone_number::placeholder, #email::placeholder, #message::placeholder {

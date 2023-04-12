@@ -16,7 +16,7 @@
     <!--Desktop View Start-->
     <div class="container-fluid mw-100 d-none d-md-block" id="desktopView">
 
-        <!--Navigation-->
+        <!--Navigation Start-->
         <div class="container-fluid mw-100 p-0" id="navigation">
             <header class="d-flex flex-wrap justify-content-between py-3" id="logoTitle">
                 <a href="/home.html" class="d-flex text-decoration-none ms-3" style="max-width: 10%;">
@@ -39,7 +39,7 @@
         </div>
         <!--Navigation End-->
 
-        <!--Main Content-->
+        <!--Main Content Start-->
         <div class="container-fluid my-5 d-flex justify-content-center">
             <div class="container my-5 bg-white rounded border border-2 border-dark-subtle" id="contactForm">
                 <div class="bg-transparent d-flex justify-content-center">
@@ -83,7 +83,7 @@
     <!--Mobile View Start-->
     <div class="container-fluid" id="mobileView">
 
-        <!--Navigation-->
+        <!--Navigation Start-->
         <nav class="navbar navbar-dark bg-transparent">
             <div class="container-fluid p-0">
                 <a class="navbar-brand" href="/home.html">
@@ -108,6 +108,44 @@
             </div>
         </nav>
         <!--Navigation End-->
+
+        <!--Main Content Start-->
+        <div class="container-fluid my-5 d-flex justify-content-center">
+            <div class="container my-5 bg-white rounded border border-2 border-dark-subtle" id="contactForm">
+                <div class="bg-transparent d-flex justify-content-center">
+                    <p class="bg-transparent text-black pb-3" style="font-size: 1.1rem;">
+                        Tell Us Your
+                        <span class="bg-transparent" style="color: #00659e;font-family: 'MuseoModerno', cursive;">
+                            Idea
+                        </span>
+                    </p>
+                </div>
+                <form action="contact.php" method="post" class="bg-transparent">
+                    <div class="bg-transparent d-flex justify-content-between">
+                        <div class="bg-transparent pe-2">
+                            <label for="first_name" class="form-label bg-transparent text-light-emphasis">First Name</label>
+                                <input type="text" id="first_name" name="first_name" class="form-control" placeholder="John" required><br>
+                        </div>
+                        <div class="bg-transparent">
+                            <label for="last_name" class="form-label bg-transparent text-light-emphasis">Last Name</label>
+                                <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Doe" required><br>
+                        </div>
+                    </div>
+                    <label for="phone_number" class="form-label bg-transparent text-light-emphasis">Phone Number</label>
+                        <input type="text" id="phone_number" name="phone_number" class="form-control" placeholder="555-555-5555"
+                        required><br>
+
+                    <label for="email" class="form-label bg-transparent text-light-emphasis">Email</label>
+                        <input type="text" id="email" name="email" class="form-control" placeholder="johndoe@gmail.com" required><br>
+
+                    <label for="message" class="form-label bg-transparent text-light-emphasis">Message</label>
+                        <textarea rows="5" id="message" name="message" cols="30" class="form-control" placeholder="I want to build a fence around my garden." required></textarea><br>
+
+                    <input type="submit" name="submit" value="Submit" class="btn text-white border w-100 py-2" id="contactSubmit" disabled>
+                </form>
+            </div>
+        </div>
+        <!--Main Content End-->
 
     </div>
     <!--Mobile View End-->
